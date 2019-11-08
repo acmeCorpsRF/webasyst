@@ -1,0 +1,19 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'Webasyst Test Page';
+    - var description = 'Webasyst Test Page';
+    - var page_class = 'test-page';
+
+block content
+    main.main
+        .beautiful-addresses
+            .beautiful-addresses__block
+                .beautiful-addresses__content
+                    h1.beautiful-addresses__title Веб-приложение для генерации красивых адресов Bitcoin
+                    .beautiful-addresses__generation
+                        .beautiful-addresses__generation-input
+                            button.beautiful-addresses__generation-button#generate(type='button')
+                                span Сгенерировать
+                        .beautiful-addresses__generation-output#output
+        

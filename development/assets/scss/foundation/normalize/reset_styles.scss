@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a,
+button {
+  transition-property: color, background-image, background-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+  transition: 0.3s linear;
+}

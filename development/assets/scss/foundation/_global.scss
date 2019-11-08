@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: OpenSans-Light, sans-serif;
+  background-color: #f7f7f7;
+}
+
+[class*=__content] {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media all and (min-width: 1664px) {
+  [class*=__content] {
+    max-width: 1664px;
+  }
+}
+
+@media all and (max-width: 1663px) and (min-width: 1280px) {
+  [class*=__content] {
+    max-width: 1280px;
+  }
+}
+
+@media all and (max-width: 1279px) and (min-width: 768px) {
+  [class*=__content] {
+    max-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  [class*=__content] {
+    max-width: 320px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.main {
+  display: block;
+
+  @media all and (min-width: 1664px) {
+    min-height: calc(100vh - 200px);
+  }
+
+  @media all and (max-width: 1663px) and (min-width: 1280px) {
+    min-height: calc(100vh - 160px);
+  }
+
+  @media all and (max-width: 1279px) and (min-width: 768px) {
+    min-height: calc(100vh - 120px);
+  }
+
+  @media all and (max-width: 767px) {
+    min-height: calc(100vh - 80px);
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: OpenSans-Bold, sans-serif;
+}
+
+p {
+  font-family: OpenSans-Regular, sans-serif;
+}

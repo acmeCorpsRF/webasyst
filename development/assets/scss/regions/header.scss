@@ -1,0 +1,24 @@
+.header {
+
+  &__block {
+    background-color: #9fb0ca;
+
+    @media all and (min-width: 1664px) {
+      height: 100px;
+    }
+
+    @media all and (max-width: 1663px) and (min-width: 1280px) {
+      height: 80px;
+    }
+
+    @media all and (max-width: 1279px) and (min-width: 768px) {
+      height: 60px;
+    }
+
+    @media all and (max-width: 767px) {
+      height: 40px;
+    }
+
+  }
+
+}
